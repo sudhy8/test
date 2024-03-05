@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-flask-app
+    runtime: docker
+    repo: https://github.com/your-repo/my-flask-app.git
+    region: oregon
+    plan: standard
+    branch: main
+    rootDir: app
+    dockerCommand: python app.py
